@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#map {
+    height: 50vh;
+    width: 100%;
+}
+#old{
+    width: 40vw;
+    height: 25px;
+    position: relative;
+    
+
+}
+#gender{
+    width: 40vw;
+    height: 25px;
+    position: relative;
+}
+#title{
+    width: 40vw;
+    height: 25px;
+}
+#naiyo{
+    width: 90vw;
+    height: 30px;
+    position: relative;
+    font-size: 20px;
+    vertical-align: text-top;
+    margin: 0 auto;
+}
+.naiyo::placeholder{
+    vertical-align: top;
+    color:#0000005b;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+p {
+    position: relative;
+        left: 3vx;
+}
+#btn{
+    position: relative;
+    font-size: 20px;
+    font-family: sans-serif;
+}
