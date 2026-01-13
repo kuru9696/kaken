@@ -25,7 +25,7 @@
 
 <body>
     <div id = "map"></div>
-    <button id ="reroad">再読み込み</button>
+    <button id ="reload" onclick="location.reload()">再読み込み</button>
    
 
     <script>
@@ -91,7 +91,9 @@
             alert("位置情報が取得できませんでした");
         }
 
-        document.getElementById("btn").addEventListener("click", buttonClick);
+       
+        
+        document.getElementById("btn").addEventListener("click", buttonClick)
     </script>
 </body>
 </html>
