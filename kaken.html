@@ -33,6 +33,7 @@
 
         // --- マップ初期化 ---
         document.addEventListener("DOMContentLoaded", () => {
+            map = L.map('map').setView([35.7, 139.49], 15);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19
@@ -73,6 +74,7 @@
                     <p><b>性別：</b>${gender}</p>
                     <p><b>タイトル：</b>${title}</p>
                     <p><b>内容：</b>${naiyo}</p>
+                    <p><button>参加</button>
                 </div>
             `);
 
