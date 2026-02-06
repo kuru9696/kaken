@@ -5,17 +5,16 @@
     <title>test</title>
 </head>
 <script>
-var map = L.map('map').setView([35.71453633559225, 139.6475400798443], 13);
+    var map = L.map('map')
+    setView([35.71453633559225, 139.6475400798443], 13);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+    L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+        attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
+    }).addTo(map);
 
-L.marker([35.71453633559225, 139.6475400798443]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-    .openPopup();
+    L.marker([35.71453633559225, 139.6475400798443]).addTo(map)
 </script>
-    <body>
+<body>
     <div id="map"></div>
 </body>
 </html>
